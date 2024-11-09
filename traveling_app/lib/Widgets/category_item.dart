@@ -2,15 +2,16 @@ import 'package:flutter/material.dart';
 import '../Screens/category_trips_screen.dart';
 
 class CategoryItem extends StatelessWidget {
+  final String id;
   final String title;
   final String imageUrl;
 
-  const CategoryItem(this.title, this.imageUrl);
+  const CategoryItem(this.id, this.title, this.imageUrl);
 
   void selectCategory(BuildContext ctx) {
     Navigator.of(ctx).push(
       MaterialPageRoute(
-        builder: (c) => CategoryTripsScreen(),
+        builder: (c) => CategoryTripsScreen(id, title),
       ),
     );
   }
