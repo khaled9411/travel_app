@@ -9,11 +9,8 @@ class CategoryItem extends StatelessWidget {
   const CategoryItem(this.id, this.title, this.imageUrl);
 
   void selectCategory(BuildContext ctx) {
-    Navigator.of(ctx).push(
-      MaterialPageRoute(
-        builder: (c) => CategoryTripsScreen(id, title),
-      ),
-    );
+    Navigator.of(ctx)
+        .pushNamed('/category-trips', arguments: {'id': id, 'title': title});
   }
 
   @override

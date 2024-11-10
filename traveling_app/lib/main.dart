@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:traveling_app/Screens/categories_screen.dart';
+import './Screens/category_trips_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,6 +18,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: CategoriesScreen(),
+      routes: {'/category-trips': (ctx) => CategoryTripsScreen()},
     );
   }
 }
