@@ -17,8 +17,12 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
-      home: CategoriesScreen(),
-      routes: {'/category-trips': (ctx) => CategoryTripsScreen()},
+      //home: CategoriesScreen(),
+      initialRoute: '/',
+      routes: {
+        '/': (ctx) => CategoriesScreen(),
+        CategoryTripsScreen.screenRoute: (ctx) => CategoryTripsScreen()
+      },
     );
   }
 }
