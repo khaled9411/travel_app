@@ -25,38 +25,38 @@ class TripItem extends StatelessWidget {
   String get seasonText {
     switch (season) {
       case Season.Winter:
-        return 'شتاء';
+        return 'winter';
         break;
       case Season.Spring:
-        return 'ربيع';
+        return 'spring';
         break;
       case Season.Summer:
-        return 'صيف';
+        return 'summer';
         break;
       case Season.Autumn:
-        return 'خريف';
+        return 'autumn';
         break;
       default:
-        return 'غير معروف';
+        return 'undefind';
     }
   }
 
   String get tripTypeText {
     switch (tripType) {
       case TripType.Exploration:
-        return 'استكشاف';
+        return 'exploration';
         break;
       case TripType.Recovery:
-        return 'نقاهة';
+        return 'recovery';
         break;
       case TripType.Activities:
-        return 'انشطة';
+        return 'activities';
         break;
       case TripType.Therapy:
-        return 'معالجة';
+        return 'therapy';
         break;
       default:
-        return 'غير معروف';
+        return 'undefind';
     }
   }
 
@@ -128,7 +128,7 @@ class TripItem extends StatelessWidget {
                       SizedBox(
                         width: 6,
                       ),
-                      Text('$duration أيام'),
+                      Text('$duration days'),
                     ],
                   ),
                   Row(

@@ -49,7 +49,7 @@ class TripDetailScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
-              buildSectionTitle(context, 'الانشطة'),
+              buildSectionTitle(context, 'activities'),
               buildListViewContainer(
                 ListView.builder(
                   itemCount: selectedTrip.activities.length,
@@ -66,7 +66,7 @@ class TripDetailScreen extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 10),
-              buildSectionTitle(context, 'البرنامج اليومي'),
+              buildSectionTitle(context, 'program'),
               buildListViewContainer(
                 ListView.builder(
                   itemCount: selectedTrip.program.length,
@@ -74,7 +74,7 @@ class TripDetailScreen extends StatelessWidget {
                     children: [
                       ListTile(
                         leading: CircleAvatar(
-                          child: Text('يوم ${index + 1}'),
+                          child: Text('day${index + 1}'),
                         ),
                         title: Text(selectedTrip.program[index]),
                       ),
