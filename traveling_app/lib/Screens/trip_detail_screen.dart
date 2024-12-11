@@ -22,7 +22,7 @@ class TripDetailScreen extends StatelessWidget {
         border: Border.all(color: Colors.grey),
         borderRadius: BorderRadius.circular(10),
       ),
-      height: 200,
+      height: 100,
       padding: EdgeInsets.all(10),
       margin: EdgeInsets.symmetric(horizontal: 15),
       child: child,
